@@ -19,7 +19,7 @@ const Expenses = () => {
     let isMounted = true
     setIsLoading(true)
 
-    fetch(`http://localhost:4000/api/expenses?month=${month}&year=${year}`)
+    fetch(`/api/expenses?month=${month}&year=${year}`)
       .then((res) => res.json())
       .then((data) => {
         if (isMounted) {

@@ -21,7 +21,7 @@ const UpdateExpense = () => {
     if (id) {
       setIsLoading(true)
 
-      fetch(`http://localhost:4000/api/expense/${id}`, {
+      fetch(`/api/expense/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const UpdateExpense = () => {
     e.preventDefault()
     setIsLoading(true)
 
-    fetch(`http://localhost:4000/api/expense/${id}`, {
+    fetch(`/api/expense/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const AddExpenses = () => {
 
     const { name, amount } = expense
 
-    fetch("http://localhost:4000/api/expense", {
+    fetch("/api/expense", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

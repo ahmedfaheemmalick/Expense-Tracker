@@ -4,7 +4,7 @@ const ConfirmModal = ({ id, showModal, setShowModal, setExpenses, setMsg }) => {
   const [password, setPassword] = useState("")
 
   const handleClick = () => {
-    fetch(`http://localhost:4000/api/expense/${id}`, {
+    fetch(`/api/expense/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
