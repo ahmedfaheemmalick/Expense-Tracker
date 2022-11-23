@@ -70,6 +70,22 @@ const Expenses = () => {
               setExpenses={setExpenses}
             />
           ))}
+          <div className="flex justify-between w-full my-2 px-2 border-2 border-black rounded-lg">
+            <div>
+              <p className="text-xl font-normal tracking-wide">
+                Total Expense:{" "}
+              </p>
+            </div>
+            <div className="flex flex-col justify-around">
+              <p className="text-xl font-normal tracking-wide">
+                {expenses
+                  .map((expense) => expense.amount)
+                  .filter((amount) => amount > 0)
+                  .reduce((acc, amount) => (acc += amount), 0)
+                  .toFixed(2)}
+              </p>
+            </div>
+          </div>
         </div>
       )}
       <Link

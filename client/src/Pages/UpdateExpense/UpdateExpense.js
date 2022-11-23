@@ -63,8 +63,8 @@ const UpdateExpense = () => {
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false)
-        setMsg({ success: data.msg })
         navigate.push("/")
+        setMsg({ success: data.msg })
       })
       .catch((err) => {
         setIsLoading(false)

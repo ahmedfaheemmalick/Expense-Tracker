@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "deploy": "cd client && yarn build && cd ..",
-    "dev": "cd client && yarn build && cd .. && nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
